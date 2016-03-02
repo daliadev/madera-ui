@@ -1,1 +1,12 @@
 /* Empty. Add your own CSS if you like */
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+.bar-madera {
+	/*font-weight: 300;*/
+	height: 80px;
+	background-color: #2962FF;
+	color: #fff;
+}

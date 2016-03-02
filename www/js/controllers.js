@@ -1,5 +1,11 @@
 angular.module('starter.controllers', [])
 
+.controller('HomeCtrl', function($scope) {})
+
+.controller('GammeCtrl', function($scope) {})
+
+.controller('ModeleCtrl', function($scope) {})
+/*
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {
@@ -26,3 +32,4 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 });
+*/
