@@ -32,46 +32,81 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 	$stateProvider
 
 	// setup an abstract state for the tabs directive
-	.state('home', {
+    .state('tab', {
+		url: '/tab',
+		abstract: true,
+		templateUrl: 'templates/tabs.html'
+	})
+
+
+    // Each tab has its own nav history stack:
+
+    // Page d'accueil
+	.state('tab.home', {
 		url: '/home',
 		views: {
-			'home': {
-				templateUrl: 'templates/home.html',
+			'tab-home': {
+				templateUrl: 'templates/tab-home.html',
 				controller: 'HomeCtrl'
 			}
 		}
 	})
 
-	// Each tab has its own nav history stack:
-
 	// Catalogue
-	.state('catalog', {
+	.state('tab.catalog', {
 		url: '/catalog',
-		abstract: true,
-		templateUrl: 'templates/catalog.html'
-	})
-
-	.state('catalog.gammes', {
-		url: '/gammes',
 		views: {
-			'catalog-gammes': {
-				templateUrl: 'templates/catalog-gammes.html',
-				controller: 'GammesCtrl'
+			'tab-catalog': {
+				templateUrl: 'templates/tab-catalog.html',
+				controller: 'CatalogCtrl'
 			}
 		}
 	})
 
-	.state('catalog.modeles', {
-		url: '/modeles',
+		.state('tab.catalog-gammes', {
+			url: '/catalog/gammes',
+			views: {
+				'tab-catalog': {
+					templateUrl: 'templates/tab-catalog-gammes.html',
+					controller: 'GammesCtrl'
+				}
+			}
+		})
+		
+		.state('tab.catalog-modeles', {
+			url: '/catalog/modeles',
+			views: {
+				'tab-catalog': {
+					templateUrl: 'templates/tab-catalog-modeles.html',
+					controller: 'ModelesCtrl'
+				}
+			}
+		})
+
+	// Client
+	.state('tab.client', {
+		url: '/client',
 		views: {
-			'catalog-modeles': {
-				templateUrl: 'templates/catalog-modeles.html',
-				controller: 'ModelesCtrl'
+			'tab-client': {
+				templateUrl: 'templates/tab-client.html',
+				controller: 'ClientCtrl'
 			}
 		}
 	})
 
 	// Devis
+	.state('tab.devis', {
+		url: '/devis',
+		views: {
+			'tab-devis': {
+				templateUrl: 'templates/tab-devis.html',
+				controller: 'DevisCtrl'
+			}
+		}
+	})
+
+	
+	
 
 	// Client
 	/*

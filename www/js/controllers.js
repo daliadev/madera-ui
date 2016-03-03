@@ -2,9 +2,15 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope) {})
 
-.controller('GammeCtrl', function($scope) {})
+.controller('CatalogCtrl', function($scope) {})
 
-.controller('ModeleCtrl', function($scope) {})
+.controller('GammesCtrl', function($scope) {})
+
+.controller('ModelesCtrl', function($scope) {})
+
+.controller('ClientCtrl', function($scope) {})
+
+.controller('DevisCtrl', function($scope) {});
 /*
 .controller('DashCtrl', function($scope) {})
 
@@ -33,3 +39,4 @@ angular.module('starter.controllers', [])
   };
 });
 */
+
