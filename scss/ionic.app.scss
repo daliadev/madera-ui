@@ -1,0 +1,101 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+
+
+// Custom fonts
+// -------------------------------
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,600italic);
+
+$font-family-sans-serif:           '-apple-system', "Open Sans", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+
+$font-family-light-sans-serif:    '-apple-system', "Open Sans-Light", "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
+
+$headings-font-weight:            600 !default;
+
+
+
+// Custom default colors
+// -------------------------------
+$positive:                        #1763CF !default;
+$energized:                       #ffc107 !default;
+
+
+// Custom types
+// -------------------------------
+p {
+	font-weight: 400;
+}
+
+a {
+	font-weight: 600;
+}
+a:hover, a:active {
+	color: #0d47a1;
+	color: #0d47a1;
+}
+
+
+// Custom bars
+// -------------------------------
+
+$bar-height:                      60px !default;
+$bar-title-font-size:             17px !default;
+$bar-padding-portrait:            5px !default;
+$bar-padding-landscape:           5px !default;
+$bar-transparency:                1 !default;
+
+$bar-footer-height:               44px !default;
+$bar-subheader-height:            44px !default;
+$bar-subfooter-height:            44px !default;
+
+	// header Madera
+	.bar.bar-header .title {
+		// line-height: 0;
+	}
+
+	.bar .header-logo {
+		float: left;
+		width: 140px;
+		height: 40px;
+		margin: 5px;
+		// line-height: 0;
+	}
+
+	.bar .title {
+		text-transform: uppercase;
+		line-height: 80px;
+		font-size: 14px !important;
+		line-height: 70px !important;
+	}
+
+	.nav-bar-block {
+		line-height: 80px;
+
+	}
+
+
+// Forms
+// -------------------------------
+
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
